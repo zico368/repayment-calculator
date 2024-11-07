@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+ 
+</head>
+<body>
+  <div class="base">
+    <div class="box-1">
+      <div class="header">
+        <h4 class="calc">Mortgage Calculator</h4>
+        <a href="clearall.com" class="clear">Clear All</a>
+      </div>
+      <div class="form"> 
+        <div class="amount">
+          <p class="mortgage-color">Mortgage Amount</p>
+          <div class="books">
+            <div class="pounds">
+              <i class="fa-solid fa-sterling-sign"></i>
+            </div>
+            <input type="number" name="number" class="mortgage-amount">  
+          </div>  
+        </div>
+        <div class="form1">
+          <div class="years">
+            <p class="mortgage-color " >Mortgage Term</p>
+            <div class="info_align">
+              <div class="inner"><p>years</p></div>
+              <input type="text" name="years" class="mortgage-term">
+            </div>  
+          </div>
+          <div class="rate">
+            <p class="mortgage-color" id="spacing" >Interest rate</p>
+            <div class="info_align">
+              <div class="inner book" ><p>%</p></div>
+              <input type="text" name="rate" class="intrest-rate">
+            </div>  
+          </div>
+        </div>
+        <p class="mortgage-color type" id="type">Mortgage Type</p>
+
+        <div class="radio">      
+          <div class="repayment">
+            <input type="radio" name="repayment" 
+             value="repayment">
+            <label for="repayment" class="repay"><b>Repayment</b></label>
+          </div>
+          <div class="intrestonly">
+            <input type="radio" name="repayment" 
+             value="intrest">
+            <label for="intrest" class="repay"><b>Interest only</b></label>
+          </div><br>
+          <div class="icons">
+            <button class="calculate"> <i class="fa-solid fa-calculator"></i> Calculate Repayments</button> 
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    <div class="box-2">
+     <img src="./assets/images/illustration-empty.svg" alt="" class="image">
+     <div class="result">
+      <h3 class="size">Results shown here</h3>
+     </div>
+     <div class="complete">
+      <p class="sizes">complete the form and click"calculate repayment" to see what the monthly repayment would be.</p>
+     </div>
+    </div>
+  </div>
+</body>
+
+
+ 
